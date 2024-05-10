@@ -15,19 +15,28 @@
   }
   .stories {
     margin-top: 20px;
-    .story {
-      height: fit-content;
-      padding: 4px;
-      border-radius: 50%;
-      // filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+    .story-container {
+      height: 100px;
+      width: 80px !important;
 
-      .image {
-        height: 70px;
-        width: 70px;
-        object-fit: contain;
+      .story {
+        height: fit-content;
+        padding: 4px;
         border-radius: 50%;
-        background-position: center;
-        background-size: cover;
+
+        .image {
+          height: 70px;
+          width: 70px;
+          object-fit: contain;
+          border-radius: 50%;
+          background-position: center;
+          background-size: cover;
+          transition-duration: 0.12s;
+        }
+        .image-animate {
+          height: 55px;
+          width: 55px;
+        }
       }
     }
     .story-1 {
@@ -86,5 +95,22 @@
         background-image: url("../../Assets/IMG/Stories/IMG-20240510-WA0016.jpg");
       }
     }
+  }
+}
+.story-open {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background: url("../../Assets/IMG/Stories/Content/story.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  .header {
+    height: 50px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    backdrop-filter: blur(3px);
   }
 }
