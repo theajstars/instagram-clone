@@ -2,6 +2,10 @@ $Black: #000;
 $BlackPrimary: #121212;
 $White: #fff;
 $White50: #ffffff82;
+$White70: #ffffff8f;
+body {
+  max-width: 600px !important;
+}
 .flex-row {
   display: flex;
   flex-direction: row;

@@ -7,8 +7,10 @@ import { MantineProvider, createTheme } from "@mantine/core";
 import Login from "./Pages/Login";
 
 import "@mantine/core/styles.css";
+import "@mantine/carousel/styles.css";
 
 import "./index.scss";
+import Home from "./Pages/Home";
 
 function App() {
   const theme = createTheme({});
@@ -19,6 +21,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Login />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/home" element={<Home />} />
         </Routes>
       </Router>
     </MantineProvider>

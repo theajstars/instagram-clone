@@ -5,8 +5,10 @@ import Logo from "../../Assets/IMG/Logo.svg";
 import { ColorBlue, getColorOpacity } from "../../Lib/Data";
 
 import "./styles.scss";
+import { useNavigate } from "react-router-dom";
 
 export default function Login() {
+  const navigate = useNavigate();
   return (
     <div className="login-container flex-col">
       <img src={BackIcon} className="back-icon" />
@@ -21,7 +23,13 @@ export default function Login() {
             Forgot Password?
           </Text>
         </div>
-        <Button className="btn" color={ColorBlue}>
+        <Button
+          className="btn"
+          color={ColorBlue}
+          onClick={() => {
+            navigate("/home");
+          }}
+        >
           Log In
         </Button>
         <div className="flex-row align-center justify-center width-100">

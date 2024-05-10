@@ -1,0 +1,90 @@
+@import "../../index.scss";
+.home-container {
+  height: 100vh;
+  background-color: $Black;
+
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  box-sizing: border-box;
+  padding: 20px 22px;
+  .header {
+    .logo {
+      height: 30px;
+    }
+  }
+  .stories {
+    margin-top: 20px;
+    .story {
+      height: fit-content;
+      padding: 4px;
+      border-radius: 50%;
+      // filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+
+      .image {
+        height: 70px;
+        width: 70px;
+        object-fit: contain;
+        border-radius: 50%;
+        background-position: center;
+        background-size: cover;
+      }
+    }
+    .story-1 {
+      background: linear-gradient(
+        5deg,
+        #f09433 0%,
+        #e6683c 25%,
+        #dc2743 50%,
+        #cc2366 75%,
+        #bc1888 100%
+      );
+      .image {
+        background-image: url("../../Assets/IMG/Stories/IMG-20240510-WA0013.jpg");
+      }
+    }
+    .story-2 {
+      background: linear-gradient(
+        25deg,
+        #f09433 0%,
+        #e6683c 25%,
+        #cd27dc 50%,
+        #7a23cc 75%,
+        #3118bc 100%
+      );
+      .image {
+        background-image: url("../../Assets/IMG/Stories/IMG-20240510-WA0009.jpg");
+      }
+    }
+    .story-3 {
+      background: linear-gradient(45deg, #fbaa47 10%, #d91a46 40%, #a60f93 50%);
+      .image {
+        background-image: url("../../Assets/IMG/Stories/IMG-20240510-WA0011.jpg");
+      }
+    }
+    .story-4 {
+      background: linear-gradient(45deg, #fbaa47 10%, #d91a46 40%, #a60f93 50%);
+      .image {
+        background-image: url("../../Assets/IMG/Stories/IMG-20240510-WA0010.jpg");
+      }
+    }
+    .story-5 {
+      background: linear-gradient(45deg, #fbaa47 10%, #d91a46 40%, #a60f93 50%);
+      .image {
+        background-image: url("../../Assets/IMG/Stories/IMG-20240510-WA0014.jpg");
+      }
+    }
+    .story-6 {
+      background: linear-gradient(45deg, #fbaa47 10%, #d91a46 40%, #a60f93 50%);
+      .image {
+        background-image: url("../../Assets/IMG/Stories/IMG-20240510-WA0015.jpg");
+      }
+    }
+    .story-7 {
+      background: linear-gradient(45deg, #fbaa47 10%, #d91a46 40%, #a60f93 50%);
+      .image {
+        background-image: url("../../Assets/IMG/Stories/IMG-20240510-WA0016.jpg");
+      }
+    }
+  }
+}

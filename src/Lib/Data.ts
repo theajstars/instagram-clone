@@ -4,3 +4,11 @@ export const getColorOpacity = (opacity: number, color: "white" | "black") => {
     ? `rgba(255 ,255, 255, ${opacity})`
     : `rgba(0 ,0, 0, ${opacity})`;
 };
+export const stories = [
+  "Your Story",
+  "waffless",
+  "theajstars",
+  "olori_ebi_jr",
+  "eri_bubs",
+  "mr_president",
+];
