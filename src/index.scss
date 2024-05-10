@@ -1,3 +1,7 @@
+$Black: #000;
+$BlackPrimary: #121212;
+$White: #fff;
+$White50: #ffffff82;
 .flex-row {
   display: flex;
   flex-direction: row;
@@ -11,6 +15,12 @@
 }
 .justify-center {
   justify-content: center;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.justify-end {
+  justify-content: flex-end;
 }
 .width-100 {
   width: 100%;
