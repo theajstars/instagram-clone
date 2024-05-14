@@ -108,9 +108,40 @@
   background-position: center;
   background-size: cover;
   .header {
-    height: 50px;
+    height: 60px;
+
     padding: 0 20px;
     box-sizing: border-box;
     backdrop-filter: blur(3px);
+    .left {
+      .avatar {
+        height: 40px;
+        margin-right: 10px;
+        border-radius: 50%;
+      }
+    }
+    .dots {
+      backdrop-filter: blur(20px);
+    }
+  }
+  .footer {
+    box-sizing: border-box;
+    padding: 20px 10px;
+    padding-right: 20px;
+    position: fixed;
+    bottom: 0;
+    backdrop-filter: blur(1.5px);
+    .input {
+      width: 77%;
+      height: 47px;
+      border-radius: 50px;
+      padding: 0px 20px;
+      border: 1px solid rgba($color: #fff, $alpha: 0.8);
+      background-color: transparent;
+      &::placeholder {
+        color: #fff;
+        font-size: 14px;
+      }
+    }
   }
 }

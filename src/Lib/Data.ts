@@ -12,3 +12,8 @@ export const stories = [
   "eri_bubs",
   "mr_president",
 ];
+export const generateRandomNumber = () => {
+  let rand = Math.random();
+  rand = rand < 1 ? rand * 10 : rand;
+  return Math.ceil(rand);
+};

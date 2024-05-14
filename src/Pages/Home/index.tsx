@@ -2,11 +2,18 @@ import { useState } from "react";
 
 import { Modal, Text } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
-import { IconBrandMessenger, IconHeart } from "@tabler/icons-react";
+import {
+  IconBrandMessenger,
+  IconDotsVertical,
+  IconHeart,
+  IconSend,
+} from "@tabler/icons-react";
 import { Carousel } from "@mantine/carousel";
 
-import { stories } from "../../Lib/Data";
+import { generateRandomNumber, stories } from "../../Lib/Data";
 import Logo from "../../Assets/IMG/Logo.svg";
+import HeartIcon from "../../Assets/IMG/Icons/Heart.svg";
+import SendIcon from "../../Assets/IMG/Icons/Send.svg";
 import Avatar from "../../Assets/IMG/Stories/IMG-20240510-WA0013.jpg";
 import "./styles.scss";
 
@@ -20,9 +27,9 @@ export default function Home() {
       <div className="flex-row align-center justify-between width-100 header">
         <img src={Logo} className="logo" />
         <div className="right flex-row align-center">
-          <IconHeart size={28} color="white" />
+          <img src={HeartIcon} />
           &nbsp; &nbsp; &nbsp;
-          <IconBrandMessenger size={28} color="white" />
+          <img src={SendIcon} />
         </div>
       </div>
 
@@ -67,10 +74,26 @@ export default function Home() {
           <div className="header flex-row align-center justify-between width-100">
             <div className="left flex-row align-center">
               <img src={Avatar} className="avatar" alt="" />
-              <Text c="#fff" fw={700} fz="sm">
-                {currentStory}
+              <Text c="#fff" fw={700} fz="14px">
+                {currentStory === "Your Story" ? "theajstars" : currentStory}
+              </Text>
+              <Text c="#e6e6e6" fz="13px" ml={10}>
+                {generateRandomNumber()}m
               </Text>
             </div>
+            <span className="dots">
+              <IconDotsVertical color="#fff" />
+            </span>
+          </div>
+          <div className="footer flex-row align-center justify-between width-100">
+            <input
+              type="text"
+              className="input"
+              placeholder="Send message"
+              spellCheck={false}
+            />
+            <img src={SendIcon} />
+            <img src={HeartIcon} />
           </div>
         </div>
       )}
